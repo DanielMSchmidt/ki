@@ -5,18 +5,17 @@ Inhaltsverzeichnis:
 -------------------
 .. toctree::
    :maxdepth: 3
-
+  basics
+  rulebased
+  notmonoton
+  constraints
+  softcomputing
+  intel
 
 Übungen
 --------
 
-Montag bekommen wir die Aufgaben, Freitag Abgabe
-
-
-
-Gliederung der Vorlesung
-------------------------
-
+Montag bekommen wir die Aufgaben, Freitag Abgabe.
 
 
 Indices and tables
