@@ -16,11 +16,3 @@ Inhaltsverzeichnis:
 --------
 
 Montag bekommen wir die Aufgaben, Freitag Abgabe.
-
-
-Indices and tables
-==================
-
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
