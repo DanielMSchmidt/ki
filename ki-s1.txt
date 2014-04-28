@@ -1,0 +1,17 @@
+1)
+
++A    -> +B
++B,+C -> +D
++A,+C -> +F
++A,+E -> +E
+
+2) 
+
+b) Alle außer R
+c) A-E = Eingabe, Q = r3, P = r2, S = r6
+d) r6,r2,r3
+
+3)
+
+A -> B
+B -> A
