@@ -52,3 +52,59 @@ Definition Konfliktmenge
 -------------------------
 
 Menge der Regeln (Regelinstanzen), die momentan anwendbar sind.
+
+
+Negative Hypothesen
+--------------------------
+
+(z.B.: :math:`\neg a`)
+
+Man versucht die Hypothese +a zu verifizieren. Schlägt dieser Versuch fehl, dann ist die negative Hypothese :math:`\neg a` bestätigt.
+
+
+
+Das Prinzip der schwachen Negation
+-----------------------------------------
+
+Eine negative Hypothese :math:`\neg a` wird dann akzeptiert, wenn alle Versuche die positive Hypothese a zu beweisen, fehlschlagen.
+
+
+
+Das Prinzip der starken Negation
+------------------------------------
+
+Eine Hypothese :math:`\neg a` wird dann akzeptiert, wenn :math:`\neg a` in der Faktenbasis vorhanden ist.
+
+Weiter: nur schwache Negation, da wir nur mit positiven Fakten arbeiten.
+
+Vorwärtsverkettende Auswertung (Vorwärtsverkettung, datenorientierte Inferenz)
+---------------------------------------------------------------------------------------------
+
+**Eingabe**: Faktenbasis, Regelbasis
+**Ausgabe**: Menge der gefolgerten Regeln
+
+**Regelauswahl**: wähle die Regel, bei der die gesamte linke Seite (Prämisse) durch Faktenbasis F erfüllt ist.
+**Wirkung**: (bei deduktischen Regel) Erweitere Faktenbasis. Interferenz endet, wenn die Faktenbasis nicht mehr erweitert werden kann.
+
+Beispiel:
+
+
+:math:`R_1 : A \wedge B \rightarrow H`
+
+:math:`R_2 : C \vee D \rightarrow I`
+
+:math:`R_3 : E \wedge F \wedge G \rightarrow J`
+
+:math:`R_4 : H \vee I \rightarrow K`
+
+:math:`R_5 : I \wedge J \rightarrow L`
+
+:math:`R_6 : K \wedge L \rightarrow M`
+
+Fertigungsprozess: A,...,G Rohstoffe, H,...,L Zwischenprodukte, M Endprodukt
+
+Gegeben seien die Fakten {C,E,F,G,H} = Faktenbasis
+Verlauf der Vorwärtsverkettung:
+
+a) Breitensuche: den Regelbaum Schicht fpr Schicht durchlaufen
+b) Tiefensuche: Verfolgen eines Pfades in die Tiefe.
