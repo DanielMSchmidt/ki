@@ -1,0 +1,21 @@
+Aufgabe 4
+==========
+
+a)
+Sei der Zustand gegeben durch das Tupel
+status(Raum in dem der Staubsauger ist, Raum 1 ist gesaugt, Raum 2 ist gesaugt).
+Hierbei ist "Raum in dem der Staubsauger ist" ein Element aus {r1, r2},
+"Raum 1, bzw Raum 2 gesaugt" als Element aus {wahr, falsch}.
+
+b)
+status(r1, falsch, falsch) -> (saugen, status(r1, wahr,   falsch))
+status(r2, falsch, falsch) -> (saugen, status(r2, falsch, wahr  ))
+status(r1, falsch, wahr  ) -> (saugen, status(r1, wahr,   wahr  ))
+status(r2, falsch, wahr  ) -> (fahren, status(r1, falsch, wahr  ))
+status(r1, wahr,   falsch) -> (fahren, status(r2, wahr,   wahr  ))
+status(r2, wahr,   falsch) -> (saugen, status(r2, wahr,   wahr  ))
+status(r1, wahr,   wahr  ) -> (nichts, status(r1, wahr,   wahr  ))
+status(r2, wahr,   wahr  ) -> (nichts, status(r2, wahr,   wahr  ))
+
+c)
+Die Reihenfolge sollte saugen > fahren > nichts sein.
