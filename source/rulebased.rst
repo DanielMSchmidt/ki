@@ -108,3 +108,25 @@ Verlauf der Vorwärtsverkettung:
 
 a) Breitensuche: den Regelbaum Schicht fpr Schicht durchlaufen
 b) Tiefensuche: Verfolgen eines Pfades in die Tiefe.
+
+
+Konfliktlösungsstrategien
+---------------------------
+
+**Refraktion** Filter: Löschen der im letzten Zyklus gefeuerten Regel / Regelinstanz
+
+**Prioritätsstrategie** Filter: r' hat höhere Priorität als r => entferne (nicht lösche) alle Regeln / Regelinstanzen aus KM (für einen Zyklus)
+
+.. image:: http://i.imgur.com/E3K5PFi.jpg
+
+**Aktualität** Prinzip: Die entstehenden Fakten werden mit Zeitmarken versehen, im Verlauf der Sitzung. Dann wird diejenige Regelinstanz bevorzugt, die sich auf die aktuelleren Fakten bezieht, also diejenigen die späternzur Faktenbasis hinzugefügt wurden. Mit dieser Strategie kann man die Tiefensuche realisieren
+
+Filter: Wähle die aktuellste Regelinstanz, entferne alle anderen aus der KM. Bei mehr als einem Prämissenteil, vergleiche den jeweils aktuellsten Prämissenteil.
+
+**Spezifität** Eine Regel r' heißt spezifischer als r, wenn der Anwendungsbereich einer Teilmenge des Anwendungsbereichs von r ist. (*Anwendungskriterium*)
+
+Anwendungskriterium: s.o.
+
+Subsumptionskriterium: Regel r' heißt spezifischer als r, wenn sie durch Einsetzen von Variablen aus r entstehen kann.
+
+Filter: r' sei spezifischer als r => entferne r aus der KM
