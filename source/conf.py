@@ -47,7 +47,7 @@ source_suffix = '.rst'
 master_doc = 'index'
 
 # General information about the project.
-project = u'Fuzzy'
+project = u'KI'
 copyright = u'2013, Daniel Schmidt'
 
 # The version info for the project you're documenting, acts as replacement for
@@ -244,8 +244,8 @@ man_pages = [
 # (source start file, target name, title, author,
 #  dir menu entry, description, category)
 texinfo_documents = [
-  ('index', 'Fuzzy', u'Fuzzy Documentation',
-   u'Daniel Schmidt', 'Fuzzy', 'One line description of project.',
+  ('index', 'KI', u'KI',
+   u'Daniel Schmidt', 'KI', 'This is a script of the KI course at CAU Kiel.',
    'Miscellaneous'),
 ]
 

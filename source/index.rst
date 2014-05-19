@@ -1,5 +1,5 @@
-Fuzzy Methoden
-==============
+Künstliche Intelligenzen
+=========================
 
 Inhaltsverzeichnis:
 -------------------
