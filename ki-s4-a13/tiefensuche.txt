@@ -1,0 +1,63 @@
+========================= 	Aufgabe 13b, Tiefensuche =========================
+Jess, the Java Expert System Shell
+Copyright (C) 2001 E.J. Friedman Hill and the Sandia Corporation
+Jess Version 6.1p2 5/21/2003
+
+Jess> (batch aufgabe13.clp)
+TRUE
+Jess> (reset)
+ ==> f-0 (MAIN::initial-fact)
+==> Activation: MAIN::R11 :  f-0
+TRUE
+Jess> (assert (A) (B) (C))
+ ==> f-1 (MAIN::A)
+ ==> f-2 (MAIN::B)
+==> Activation: MAIN::R1 :  f-1, f-2
+ ==> f-3 (MAIN::C)
+==> Activation: MAIN::R2 :  f-3
+<Fact-3>
+Jess> (run 1)
+FIRE 1 MAIN::R2 f-3
+ ==> f-4 (MAIN::G)
+==> Activation: MAIN::R4 :  f-4
+==> Activation: MAIN::R5 :  f-4
+1
+Jess> (run 1)
+FIRE 1 MAIN::R4 f-4
+ ==> f-5 (MAIN::I)
+==> Activation: MAIN::R8 :  f-5
+1
+Jess> (run 1)
+FIRE 1 MAIN::R8 f-5
+ ==> f-6 (MAIN::M)
+1
+Jess> (run 1)
+FIRE 1 MAIN::R5 f-4
+ ==> f-7 (MAIN::J)
+==> Activation: MAIN::R8 :  f-7
+1
+Jess> (run 1)
+FIRE 1 MAIN::R8 f-7
+1
+Jess> (run 1)
+FIRE 1 MAIN::R1 f-1, f-2
+ ==> f-8 (MAIN::F)
+==> Activation: MAIN::R4 :  f-8
+1
+Jess> (run 1)
+FIRE 1 MAIN::R4 f-8
+1
+Jess> (run 1)
+FIRE 1 MAIN::R11 f-0
+f-0   (MAIN::initial-fact)
+f-1   (MAIN::A)
+f-2   (MAIN::B)
+f-3   (MAIN::C)
+f-4   (MAIN::G)
+f-5   (MAIN::I)
+f-6   (MAIN::M)
+f-7   (MAIN::J)
+f-8   (MAIN::F)
+For a total of 9 facts.
+1
+Jess>

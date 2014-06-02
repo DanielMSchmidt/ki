@@ -1,0 +1,26 @@
+=================== Aufgabe 13c (Rueckwaertsverkettung) ===================
+Jess, the Java Expert System Shell
+Copyright (C) 2001 E.J. Friedman Hill and the Sandia Corporation
+Jess Version 6.1p2 5/21/2003
+
+Jess> (batch aufgabe13b.clp)
+TRUE
+Jess> (reset)
+TRUE
+Jess> (assert (A) (B) (C))
+<Fact-5>
+Jess> (run)
+------> M is true <-------
+N cannot be confirmed for given facts
+f-0   (MAIN::initial-fact)
+f-1   (MAIN::need-M)
+f-2   (MAIN::need-N)
+f-3   (MAIN::A)
+f-4   (MAIN::B)
+f-5   (MAIN::C)
+f-6   (MAIN::G)
+f-7   (MAIN::I)
+f-8   (MAIN::M)
+For a total of 9 facts.
+6
+Jess>
