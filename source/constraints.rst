@@ -23,9 +23,13 @@ Dies gilt nur für binäre Contraintproblems (die nur ein oder zweistellige cons
 
 Heuristik der minimalen Breitenordnung
 -----------------------------------------------
-**Idee:** Zuerst solche Variablen belegen, die den meisten anderen Variablen durch Knoten verbunden sind.
+Idee
+^^^^^^
 
-**Vorgangsweise:**
+Zuerst solche Variablen belegen, die den meisten anderen Variablen durch Knoten verbunden sind.
+
+Vorgangsweise
+^^^^^^^^^^^^^
 
 - wähle Knoten mit dem größten Grad (und der größten Kantenzahl) und belege entsprechende Variable
 - löse den Knoten und ausgehende Kanten

@@ -29,10 +29,32 @@ Wissen
 Noise (relevante und unrelevante Daten)  => Data => Information => Knowledge => Meta-Knowledge
 
 
-**Arten**: präzise / unsicher / unvollständig / vage
+Arten
+^^^^^^
 
-**Formen**: deklarativ (Daten / konv. Systeme) / prozedural (Algorithmen)
+- präzise
+- unsicher
+- unvollständig
+- vage
 
-**Präsentation**: constraints / logikbasiert / regelbasiert / semantische Netze
+Formen
+^^^^^^^
 
-**Verarbeitung**: Suchverfahren / Schlussfolgerungen / Logikbasierte Wissensverarbeitung / Soft computing
+- deklarativ (Daten / konv. Systeme)
+- prozedural (Algorithmen)
+
+Präsentation
+^^^^^^^^^^^^^^
+
+- constraints
+- logikbasiert
+- regelbasiert
+- semantische Netze
+
+Verarbeitung
+^^^^^^^^^^^^^^
+
+- Suchverfahren
+- Schlussfolgerungen
+- Logikbasierte Wissensverarbeitung
+- Soft computing
