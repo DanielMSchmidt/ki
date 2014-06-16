@@ -68,3 +68,49 @@ Nach der Änderung der Faktenbasis (Hinzufügen oder Löschen eines Faktums) wir
 - Verliert eine Regelinstanz ihre Anwendbarkeit, dann werden ihre Schlussfolgerungen zurückgezogen
 
 *(Siehe Zettel)*
+
+Konsistente Markierung
+------------------------
+*Rechtfertigungstabelle nicht prüfungsrelevant*
+
+Ziel
+^^^^^^^^^^
+
+Das System soll anhand einer (vom Besitzer) gegebenen Markierung der Annahmen eine konsistente Markierung des gesamten Netzes durchzuführen.
+
+Definition
+^^^^^^^^^^^^^^^
+
+Sei N ein markiertes RF-Netz, dann heißt eine Markierung konsistent, wenn für jeden Nicht-Blatt-Knoten k (keine Annahme) gilt:
+
+- k mit IN markiert :math:`\Longleftrightarrow` k ist durch eine nichtleere Menge von Regeln, denen positive Bedingungen mit IN und negative Bedingungen mit OUT markiert sind, gerechtfertigt.
+- k mit OUT markiert :math:`\Longleftrightarrow` k nicht mit IN markiert.
+
+
+Annahmenbasierte Systeme (ATMS)
+--------------------------------
+
+Definition
+^^^^^^^^^^
+
+Sei k ein Knoten eines RF-Netzes. Ein Kontext für k ist eine bzgl. Mengeninklusion minimale Menge K von positive und negative Annahmen mit folgender Eigenschaft:
+
+Ist jede positive Annahme mit IN markiert und jede negative mit OUT, so muss in einer konsistenten Markierung des ganzen Netzes auch k mit IN markiert sein.
+
+Aufgabe
+^^^^^^^^
+
+Finde alle Kontexte, die einen gegebenen Knoten im RF-Netz begründen.
+
+Aktualisierung von Wissensbasen
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Ändert sich z.B. die Markierung der Annahme A von OUT nach IN, dann muss das System diejenigen Kontexte die :math:`\neg A` enthalten als Begründungen deaktivieren und diejenigen Kontexte, die A enthalten als Begründungen aktivieren.
+
+
+Allgemeines Verfahren zur Kontexterstellung eines Knotens (z.B. des Knotens k)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+1. Regeln in aussagenlogische Formel transformieren.
+2. Kontexte durch eine aussagenlogische Transformation (in die disjunktiv Normalform) erstellen.
+3. redundante Kontexte (subsumierte und tautologische) löschen
