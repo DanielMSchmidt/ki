@@ -16,3 +16,29 @@ Inhaltsverzeichnis:
 --------
 
 Montag bekommen wir die Aufgaben, Freitag Abgabe.
+
+Prüfungsstoff
+-------------------
+
+*Übungen sind ausgeschlossen*
+
+
+- **Regelbasierte Systeme:**
+    - Was ist Expertensystem
+    - Prämissearten
+    - Schlussfolgerungsverfahren
+    - Regel/Regelinstanzen
+    - Konfliktlösungsstrategien
+- **Constraints:**
+    - Definition
+    - Heuristiken
+    - Propagierung von Constraints
+- **Soft Computing:**
+    - Genetische Algorithmen
+        - Was ist das?
+        - Hauptoperationen
+        - Hauptanwendungsbereich
+    - Wahrscheinlichkeitsbasierte Verfahren
+    - Verfahren für Schlussfolgerungen
+    - Ansatz von Base
+    - Demster-Scheffer Verfahren
