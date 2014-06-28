@@ -1,0 +1,17 @@
+lionis:~{ki07} java jess.Main aufgabe16.clp
+
+Jess, the Java Expert System Shell
+Copyright (C) 2001 E.J. Friedman Hill and the Sandia Corporation
+Jess Version 6.1p2 5/21/2003
+
+Is the animal warm-blooded? (yes, dnk or no) dnk
+Create new additional question? (yes, no)yes
+Additional Question:Is it extinct?
+Yes-Animal:Dodo
+No-Animal:Mouse
+Try again? (yes or no) yes
+Is the animal warm-blooded? (yes, dnk or no) dnk
+Is it extinct? (yes, dnk or no) yes
+I guess it is a Dodo
+Am I correct? (yes or no) yes
+Try again? (yes or no) no
