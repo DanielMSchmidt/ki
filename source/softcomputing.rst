@@ -106,3 +106,93 @@ i   Zahl  :math:`f(x) = x^2`
 
 Vergleich: Klassische und genetische Optimierungs-Algorithmen
 ----------------------------------------------------------------------
+
+- GA suchen nicht mit einem Punkt, sondern mit der Population der Punkte (schließt ein mögliches Steckenbleiben im lokalen Funktionsextremen praktisch aus)
+- GA benutzen wahrscheinlichkeitsbasierte Regeln anstatt deterministische Regeln
+
+Wahrscheinlichkeitsbedingte Schlussfolgerungen
+----------------------------------------------
+
+Ansatz von Bayes
+^^^^^^^^^^^^^^^^^
+
+if B then H with p
+
+Sei :math:`\Omega` - endlicher Ereignisraum
+
+Grundidee:
+""""""""""
+
+Jede Aussage, die sich auf ein wirklich eingetretenes Ereignis bezieht, kann als Teilmenge :math:`A \subseteq \Omega` repräsentiert werden.
+Eine Aussage heißt wahr, wenn die Aussage entsprechende Teilmenge :math:`A \subseteq \Omega` das tatsächlich eingetretene Ereignis :math:`\omega` enthalten.
+
+Beispiel: Aussage: "Es wurde eine gerade Zahl gewürfelt"
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+Die Aussage ist wahr, wenn eine 2, eine 4 oder eine 6 gewürfelt wurde. :math:`A = \{ 2,4,6 \}`
+Seien A und B Ereignisse, so sind :math:`A \cup B, A \cap B` und Komplement von A und B sind Ereignisse
+
+
+Definition (Bedingte Wahrscheinlichkeit)
+"""""""""""""""""""""""""""""""""""""""""
+
+Sei P eine Wahrscheinlichkeit über :math:`\Omega` und :math:`B \subseteq \Omega` ein Ereignis, für das P(B) > 0 gilt.
+Dann heißt für jedes Ereignis :math:`H \subseteq \Omega` der Ausdruck
+
+.. math::
+
+  P(H|B) = \frac{P(H \cap B)}{P(B)}
+
+bedingte Wahrscheinlichkeit von H under der Bedingung B. Die bedingte Wahrscheinlichkeit ist undefiniert, falls P(B) = 0 gilt.
+
+.. math::
+
+  P(H|B) = \frac{P(B|H \times P(H))}{P(B)}
+
+Vertrauensintervalle nach Dempster-Shafter
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Ziel
+"""""
+
+Grad der Glaubwürdigkeit von Aussagen verschiedenen Zeugen / Experten zu modellisieren.
+
+Annahme
+""""""""
+
+Ein Vertrauen (belief) in die Wahrheit einer Aussage, die als Teilmenge :math:`A \subseteq \Omega` repräsentierbar ist, kann durch eine reele Zahl :math:`bel(A) \in [0, 1]` modelliert werden.
+
+Definition Basiswahrscheinlichkeit
+""""""""""""""""""""""""""""""""""""
+
+Eine Funktion :math:`m: 2^{\Omega} \rightarrow [0, 1]` heißt Basiswahrscheinlichkeit, wenn sie die Bedingungen :math:`m(\emptyset) = 0` und :math:`\sum_{A \subseteq \Omega} m(A) = 1` erfüllt.
+
+
+m wird als Basisvertrauen interpretiert(m(A) = Basisvertrauen in A). Die Menge A, für die m(A) > 0 gilt, werden als Fokalelemente bezeichnet.
+
+Definition Belief-Funktion
+""""""""""""""""""""""""""
+
+Sei :math:`m: 2^{\Omega} \rightarrow [0, 1]` eine Basiswahrscheinlichkeit.
+Dann heißt die durch
+
+.. math::
+
+  bel&: 2^{\Omega} \rightarrow [0, 1] \\
+  bel&(A) = \sum_{B \subseteq A} m(B)
+
+für :math:`A \subseteq \Omega` definierte Funktion Belief-Funktion (bel).
+bel(A) interpretiert man als Mindestvertrauen in das Ereignis A.
+
+Die zu Belief-Funktion duale Funktion heißt Plausibilitäts-Funktion pl
+
+.. math::
+
+  \forall A \subseteq \Omega: pl(A) = 1 - bel(\overline{A})
+
+pl(A) interpretiert man als Maximum an Vertrauen in A.
+[bel(A), bel(A)] - Vertrauensintervall nach Dempster-Shafer
+
+Kombinationsregel
+
+Kombination unabhängiger Informationsquellen, z.B. unsicherer Bewertung von Ereignissen durch verschiedene Experten oder Ergebnisse von verschiedenen Marktstudien.
