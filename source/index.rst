@@ -28,11 +28,13 @@ Prüfungsstoff
     - Prämissearten
     - Schlussfolgerungsverfahren
     - Regel/Regelinstanzen
+    - Konfliktmenge
     - Konfliktlösungsstrategien
 - **Constraints:**
     - Definition
     - Heuristiken
     - Propagierung von Constraints
+- Was ist nicht monotones Schließen
 - **Soft Computing:**
     - Genetische Algorithmen
         - Was ist das?
