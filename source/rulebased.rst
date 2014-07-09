@@ -89,7 +89,7 @@ Das Prinzip der starken Negation
 
 Eine Hypothese :math:`\neg a` wird dann akzeptiert, wenn :math:`\neg a` in der Faktenbasis vorhanden ist.
 
-Weiter: nur schwache Negation, da wir nur mit positiven Fakten arbeiten.
+**Weiter: nur schwache Negation, da wir nur mit positiven Fakten arbeiten.**
 
 Vorwärtsverkettende Auswertung (Vorwärtsverkettung, datenorientierte Inferenz)
 ---------------------------------------------------------------------------------------------
