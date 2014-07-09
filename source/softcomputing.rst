@@ -202,7 +202,7 @@ Kombination unabhängiger Informationsquellen, z.B. unsicherer Bewertung von Ere
 Gegeben: :math:`\Omega` und :math:`m_1: 2^{\Omega} \rightarrow [0,1]`, :math:`m_2: 2^{\Omega} \rightarrow [0,1]`. :math:`A_i` und :math:`B_j` entsprechende Fokalelemente.
 
 +----------------+--------------------------------+------------------+------+------------------+
-|:math:`m_1(A_1)`| ....                           | :math:`m_1(A_i)` | .... | :math:`m_1(A_k)` |
+|....            | :math:`m_1(A_1)`               | :math:`m_1(A_i)` | .... | :math:`m_1(A_k)` |
 +================+================================+==================+======+==================+
 |:math:`m_2(B_1)`|:math:`m_1(A_1) \cdot m_2(B_1)` |...               |  ... | .............    |
 +----------------+--------------------------------+------------------+------+------------------+
