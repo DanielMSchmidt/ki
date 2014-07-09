@@ -65,6 +65,8 @@ Anwendungsbeispiel
 - Gesucht: Max der Funktion :math:`f(x) = x^2`
 - Kodierung: binäre Chromosomen mit 5 Bits (Genen)
 - Anfangspopulation (willkürlich ausgewählt): 4 Chromosomen fÜr x = 13, 24, 8, 19
+
+
 ==  ====  ==================  ===========================  ================
 i   Zahl  :math:`f(x) = x^2`  :math:`\sum^n_{i=1} f(x_i)`  :math:`P_{cum}`
 ==  ====  ==================  ===========================  ================
@@ -223,7 +225,7 @@ Gegeben: :math:`\Omega` und :math:`m_1: 2^{\Omega} \rightarrow [0,1]`, :math:`m_
 
 Es ist möglich dass :math:`A_i \cup B_j = \emptyset` und in der Tabelle :math:`m_1(A_i) \cdot m_2(B_j) \neq 0` ist. Dies ist ein Wiederspruch mit der Definition von m, da :math:`m(\emptyset) = 0`. Es muss eine Nominierung vorgenommen werden.
 
-Konfliktmenge: :math:`K = \sum_{A,B \subset \Omega, A \cup B \neq 0} m_1(A) \cdot m_2(B)`
+**Konfliktmenge**: :math:`K = \sum_{A,B \subset \Omega, A \cup B \neq 0} m_1(A) \cdot m_2(B)`
 
 Dempster Kombinationsregel
 --------------------------

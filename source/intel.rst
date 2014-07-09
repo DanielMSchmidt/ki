@@ -9,7 +9,7 @@ Intelligenz
 Die Fähigkeit zu verstehen, lernen und sich in konkreten Situationen erfolgreich zu verhalten.
 
 Verfahren zur Abbildung des intelligenten Verhaltens
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 - wissensbasierte (regelbasierte) Systeme
 - Maschinelles Lernen

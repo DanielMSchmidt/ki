@@ -24,7 +24,7 @@ Prüfungsstoff
 
 
 - **Regelbasierte Systeme:**
-    - Was ist Expertensystem
+    - Was ist Expertensystem?
     - Prämissearten
     - Schlussfolgerungsverfahren
     - Regel/Regelinstanzen

@@ -5,6 +5,7 @@ Einführung
 ----------------
 
 Probleme der Wissensrepräsentation und Wissensverarbeitung:
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 - **Unvollständigkeit**: Man muss bereit sein Wissen zu aktualisieren und zu revidieren (sowohl Anfangsfaktenbasis, als auch abgeleitetes Wissen). *Aufgabe:* Aktualisierung / Änderung der Wissensbasis
 - **Inkonsistenz**: (z.B. widersprüchliche Schlussfolgerungen) *Aufgabe:* Konsistenz - Prüfung - Überwachung
@@ -20,6 +21,7 @@ Probleme der Wissensrepräsentation und Wissensverarbeitung:
 
 
 KM - abgeleitetes Faktum
+^^^^^^^^^^^^^^^^^^^^^^^^^
 
 r1, r2' - legt_eier(Hansi) & r_2 - kann_fliegen(Hansi) => pinguin(Hansi) [r2' nicht mehr anwendbar, abgeleitetes Wissen muß revidiert werden => nicht monotones Schließen]
 

@@ -1,7 +1,7 @@
 ### Sphinx ###
 node_modules/
 build/
-
+constraint-scans/
 
 ### OSX ###
 .DS_Store

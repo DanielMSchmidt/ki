@@ -166,7 +166,14 @@ Spezifität
 Eine Regel r' heißt spezifischer als r, wenn der Anwendungsbereich einer Teilmenge des Anwendungsbereichs von r ist. (*Anwendungskriterium*)
 
 Anwendungskriterium: s.o.
+^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Subsumptionskriterium: Regel r' heißt spezifischer als r, wenn sie durch Einsetzen von Variablen aus r entstehen kann.
+Subsumptionskriterium:
+^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Filter: r' sei spezifischer als r => entferne r aus der KM
+Regel r' heißt spezifischer als r, wenn sie durch Einsetzen von Variablen aus r entstehen kann.
+
+Filter:
+^^^^^^^^^^^^^^^^^^^^^^^^^
+
+r' sei spezifischer als r => entferne r aus der KM
