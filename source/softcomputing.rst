@@ -147,7 +147,7 @@ bedingte Wahrscheinlichkeit von H under der Bedingung B. Die bedingte Wahrschein
 
 .. math::
 
-  P(H|B) = \frac{P(B|H \times P(H))}{P(B)}
+  P(H|B) = \frac{P(B|H) \times P(H)}{P(B)}
 
 Vertrauensintervalle nach Dempster-Shafter
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
