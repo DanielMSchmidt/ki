@@ -39,16 +39,15 @@ Lösung eines CP
 
 Finden einer globalen Markierung
 
-
-Heuristiken für Contraintproblem
--------------------------------------------
-
-
 Constraintnetz
-^^^^^^^^^^^^^^^
+---------------
 
 Dies ist ein Graph, dessen Knoten den Variablen eines CP entsprechen und dessen Kanten mit Beschränkungen (constraints) markiert sind.
 Dies gilt nur für binäre Contraintproblems (die nur ein oder zweistellige constraints enthalten)
+
+
+Heuristiken für Contraintproblem
+-------------------------------------------
 
 Heuristik der maximal eingeschränkten Variablen
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
