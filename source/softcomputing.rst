@@ -225,9 +225,9 @@ Gegeben: :math:`\Omega` und :math:`m_1: 2^{\Omega} \rightarrow [0,1]`, :math:`m_
 
 Es ist möglich dass :math:`A_i \cup B_j = \emptyset` und in der Tabelle :math:`m_1(A_i) \cdot m_2(B_j) \neq 0` ist. Dies ist ein Wiederspruch mit der Definition von m, da :math:`m(\emptyset) = 0`. Es muss eine Nominierung vorgenommen werden.
 
-**Konfliktmenge**: :math:`K = \sum_{A,B \subset \Omega, A \cup B \neq 0} m_1(A) \cdot m_2(B)`
+**Konfliktmenge**: :math:`K = \sum_{A,B \subset \Omega, A \cap B = 0} m_1(A) \cdot m_2(B)`
 
 Dempster Kombinationsregel
 --------------------------
 
-Seien :math:`m_1, m_2` Basiswahrscheinlichkeiten über den selben Ereignisraum :math:`\Omega` und K Konfliktgrad (K < 1). Dann definiert :math:`m(\emptyset) = 0` und :math:`m(c) = \frac{\sum_{A,B \subset c, A \cup B \neq 0} m_1(A) \cdot m_2(B)}{1-K}` für :math:`c \subseteq \Omega, c \neq \emptyset` die Kombination :math:`m(c) = m_1(A) + m_2(B)` der beiden Basiswahrscheinlichkeiten.
+Seien :math:`m_1, m_2` Basiswahrscheinlichkeiten über den selben Ereignisraum :math:`\Omega` und K Konfliktgrad (K < 1). Dann definiert :math:`m(\emptyset) = 0` und :math:`m(c) = \frac{\sum_{A,B \subset \Omega, A \cup B \neq 0} m_1(A) \cdot m_2(B)}{1-K}` für :math:`c \subseteq \Omega, c \neq \emptyset` die Kombination :math:`m(c) = m_1(A) + m_2(B)` der beiden Basiswahrscheinlichkeiten.
