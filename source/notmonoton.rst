@@ -23,7 +23,7 @@ Probleme der Wissensrepräsentation und Wissensverarbeitung:
 KM - abgeleitetes Faktum
 ^^^^^^^^^^^^^^^^^^^^^^^^^
 
-r1, r2' - legt_eier(Hansi) & r_2 - kann_fliegen(Hansi) => pinguin(Hansi) [r2' nicht mehr anwendbar, abgeleitetes Wissen muß revidiert werden => nicht monotones Schließen]
+:math:`r_1, r_2' - legt\_eier(Hansi) & r_2 - kann\_fliegen(Hansi) \rightarrow pinguin(Hansi)` [r2' nicht mehr anwendbar, abgeleitetes Wissen muß revidiert werden => nicht monotones Schließen]
 
 Kennzeichen klassischer Logik: Zusätzliche Information kann alte Schlüsse nicht ungültig machen (die Wissensbasis wächst mit dem Hinzufügen neuen Wissens monoton an)
 
