@@ -193,7 +193,7 @@ Die zu Belief-Funktion duale Funktion heißt Plausibilitäts-Funktion pl
   \forall A \subseteq \Omega: pl(A) = 1 - bel(\overline{A})
 
 pl(A) interpretiert man als Maximum an Vertrauen in A.
-[bel(A), bel(A)] - Vertrauensintervall nach Dempster-Shafer
+[bel(A), pl(A)] - Vertrauensintervall nach Dempster-Shafer
 
 Kombinationsregel
 ^^^^^^^^^^^^^^^^^^
